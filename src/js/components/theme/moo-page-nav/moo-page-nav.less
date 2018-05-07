@@ -1,0 +1,45 @@
+//@import "../../../../styles/brand-variables";
+
+.moo-page-nav-wrapper {
+  width: 100%;
+  height: 74px;
+  padding: 8px 0;
+  background-color: #fff;
+}
+
+.moo-page-nav.ui.menu {
+  max-width: 1600px;
+  margin: 0 auto;
+  background: transparent;
+  height: 100%;
+  border: none;
+  border-radius: 0;
+  box-shadow: none;
+
+  .item {
+    height: 100%;
+    color: @GrayDarker;
+    font-family: @MetaFontFamily;
+    font-size: 1.2rem;
+    font-weight: 500;
+    padding: 12px 2px;
+    margin: 0 18px;
+
+    &:first-child {
+      margin-left: 40px;
+    }
+  }
+
+  a.item:hover {
+    color: @BlueDark;
+    background-color: transparent;
+  }
+
+  .active.item,
+  .active.item:hover {
+    background: transparent;
+    border-bottom: 4px solid @Blue;
+    border-radius: 0;
+    color: @BlueDark;
+  }
+}

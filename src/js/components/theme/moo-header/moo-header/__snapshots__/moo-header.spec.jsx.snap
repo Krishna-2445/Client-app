@@ -1,0 +1,52 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<MooHeader /> renders as expected with siteTitle prop 1`] = `
+<div
+  className="moo-header-wrapper"
+>
+  <div
+    className="moo-header"
+  >
+    <NavLink
+      activeClassName="active"
+      to="/"
+    >
+      <img
+        className="logo"
+        src="test-file-stub"
+      />
+      <h1>
+        Site Title
+      </h1>
+    </NavLink>
+  </div>
+</div>
+`;
+
+exports[`<MooHeader /> renders children as expected 1`] = `
+<div
+  className="moo-header-wrapper"
+>
+  <div
+    className="moo-header"
+  >
+    <NavLink
+      activeClassName="active"
+      to="/"
+    >
+      <img
+        className="logo"
+        src="test-file-stub"
+      />
+      <h1>
+        Site Title
+      </h1>
+    </NavLink>
+     
+    <div>
+      Child
+    </div>
+     
+  </div>
+</div>
+`;

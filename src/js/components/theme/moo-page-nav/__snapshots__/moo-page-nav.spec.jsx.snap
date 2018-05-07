@@ -1,0 +1,24 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<MooPageNav /> renders correct text and links 1`] = `
+<Menu
+  borderless={true}
+  className="moo-page-nav"
+  stackable={true}
+>
+  <MenuItem
+    activeClassName="active"
+    as={[Function]}
+    to="/home"
+  >
+    Home
+  </MenuItem>
+  <MenuItem
+    activeClassName="active"
+    as={[Function]}
+    to="/away"
+  >
+    Away
+  </MenuItem>
+</Menu>
+`;

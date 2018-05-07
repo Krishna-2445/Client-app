@@ -1,0 +1,20 @@
+// Set a REM font size with px fallback
+// p {
+//   @include font-size(14px)
+// }
+.calculateRem(@size) {
+  @remSize: (@size / 12px) * 1rem;
+}
+
+.font-size(@size) {
+  .calculateRem(@size);
+  font-size: @remSize;
+}
+
+// Cross browser opacity
+
+.opacity(@opacity) {
+  opacity: @opacity;
+  @opacity-ie: @opacity * 100;
+  filter: alpha(opacity=@opacity-ie); //IE8
+}

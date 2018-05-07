@@ -1,0 +1,39 @@
+description "react starter UI"
+
+apply plugin: 'com.moowork.node'
+
+node {
+  version = '6.10.2'
+  yarnVersion = '0.27.5'
+  download = true
+  distBaseUrl = "$artifactoryUrl/node-dists/"
+  nodeModulesDir = file("${project.projectDir}")
+  workDir = new File("${gradle.getGradleUserHomeDir()}/caches/node")
+}
+
+def lcovPath = "dev/.jest/coverage/lcov.info"
+def unitPath = "dev/.jest/sonar/test-report.xml"
+
+sonarqube {
+  properties {
+    // Path to unit test report
+    property "sonar.javascript.lcov.reportPath", lcovPath
+    property "sonar.genericcoverage.unitTestReportPaths", unitPath
+
+    // Sonar uses file types in sources to determine which code instrumentation tools to apply
+    property "sonar.sources", ["src/js"]
+    property "sonar.tests", ["src/js"]
+    property "sonar.test.inclusions", ["src/js/**/*.spec.*",]
+    property "sonar.exclusions", [
+      ".gradle",
+      ".storybook",
+      ".vscode",
+      ".webpack",
+      "node_modules",
+      "src/__mocks__",
+      "src/**/*.spec.*"
+    ]
+  }
+}
+
+apply from: "../gradle/tasks/node.gradle"

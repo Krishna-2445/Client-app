@@ -1,0 +1,41 @@
+@import '../../../../../styles/variables';
+
+.moo-header-wrapper {
+  width: 100%;
+  background-color: #fff;
+  border-bottom: 1px solid @lightGrey;
+  padding: 0 20px;
+  margin-bottom: 13px;
+}
+
+.moo-header {
+  max-width: 1600px;
+  height: 80px;
+  margin: 0 auto;
+  color: @darkBlue;
+
+  .logo {
+    width: 80px;
+    float: left;
+    border-right: 1px solid @darkBlue;
+    margin-top: 10px;
+    padding: 3px 12px 3px 0;
+  }
+
+  .horizontal-logo {
+    float: left;
+    width: 220px;
+    margin-top: 15px;
+  }
+
+  a h1,
+  a.active h1 {
+    float: left;
+    margin: 20px 45px 8px 12px;
+    padding: 3px 0;
+    font-weight: 500;
+    font-size: 1.8rem;
+    //font-family: @MetaFontFamily;
+    color: @darkBlue;
+  }
+}

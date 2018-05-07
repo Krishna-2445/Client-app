@@ -1,0 +1,35 @@
+@import '../../../../../styles/variables';
+
+/* ----------------------------------------------------------------------
+Style Mixins
+----------------------------------------------------------------------- */
+
+.moo-header-menu {
+  background: transparent;
+  margin: 0 20px;
+  height: 100%;
+  border: none;
+  border-radius: 0;
+  box-shadow: none;
+
+  .item {
+    height: 100%;
+    color: @darkGrey;
+    //font-family: @MetaFontFamily;
+    font-size: 1.2rem;
+    font-weight: 500;
+  }
+
+  a.item:hover {
+    //color: @BlueDark;
+    background-color: @lightGrey;
+  }
+
+  .active.item,
+  .active.item:hover {
+    background: transparent;
+    border-bottom: 2px solid @blue;
+    border-radius: 0;
+    color: @darkBlue;
+  }
+}

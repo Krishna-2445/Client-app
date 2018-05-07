@@ -1,0 +1,46 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<SignIn> with an authenticated user should show user name and default link to nothing 1`] = `
+<MenuItem
+  activeClassName="active"
+  as={[Function]}
+  id="moo-sign-in"
+  to="#"
+>
+  <Icon
+    as="i"
+    name="user circle outline"
+  />
+  Abby Jones
+</MenuItem>
+`;
+
+exports[`<SignIn> with an authenticated user should use alternate link if provided 1`] = `
+<MenuItem
+  activeClassName="active"
+  as={[Function]}
+  id="moo-sign-in"
+  to="/abby-jones"
+>
+  <Icon
+    as="i"
+    name="user circle outline"
+  />
+  Abby Jones
+</MenuItem>
+`;
+
+exports[`<SignIn> with no authenticated User renders Sign In with link from props 1`] = `
+<MenuItem
+  activeClassName="active"
+  as={[Function]}
+  id="moo-sign-in"
+  to="/sign-in"
+>
+  <Icon
+    as="i"
+    name="user circle outline"
+  />
+  Sign In
+</MenuItem>
+`;

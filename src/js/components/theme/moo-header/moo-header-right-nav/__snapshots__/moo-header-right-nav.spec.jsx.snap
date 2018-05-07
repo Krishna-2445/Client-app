@@ -1,0 +1,66 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<MooHeaderRightNav /> renders correct text, links, and icons 1`] = `
+<Menu
+  borderless={true}
+  className="moo-right-nav"
+  floated="right"
+  stackable={true}
+>
+  <MenuItem
+    activeClassName="active"
+    as={[Function]}
+    to="/rock"
+  >
+    <Icon
+      as="i"
+      name="hand rock"
+    />
+    Rock
+  </MenuItem>
+  <MenuItem
+    activeClassName="active"
+    as={[Function]}
+    to="/paper"
+  >
+    <Icon
+      as="i"
+      name="hand paper"
+    />
+    Paper
+  </MenuItem>
+  <MenuItem
+    activeClassName="active"
+    as={[Function]}
+    to="/scissors"
+  >
+    <Icon
+      as="i"
+      name="hand scissors"
+    />
+    Scissors
+  </MenuItem>
+  <MenuItem
+    activeClassName="active"
+    as={[Function]}
+    to="/lizard"
+  >
+    <Icon
+      as="i"
+      name="hand lizard"
+    />
+    Lizard
+  </MenuItem>
+  <MenuItem
+    activeClassName="active"
+    as={[Function]}
+    to="/spock"
+  >
+    <Icon
+      as="i"
+      name="hand spock"
+    />
+    Spock
+  </MenuItem>
+</Menu>
+`;
